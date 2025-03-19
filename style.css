@@ -1,0 +1,62 @@
+:root {
+    --font-family: 'Calluna Semibold', serif;
+    --color-light: #f6f6f4;
+    --color-dark: #212121;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Calluna+Semibold&display=swap');
+
+body {
+    background-color: var(--color-dark);
+    color: var(--color-light);
+    font-family: var(--font-family);
+    text-align: center;
+    overflow: hidden;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100vh;
+}
+
+p.info {
+    font-size: 1em;
+    font-weight: 600;
+    color: var(--color-light);
+    font-family: var(--font-family);
+    line-height: 2;
+}
+
+p.contact-link {
+    font-size: 1em;
+    font-weight: 400;
+    color: var(--color-light);
+    font-family: var(--font-family);
+}
+
+img.logo {
+    display: block;
+    margin: 0 auto;
+    width: 15.741vh;
+    height: auto;
+    color: var(--color-light);
+}
+
+.banner {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: url("images/banner.svg") center/cover no-repeat;
+    z-index: 1000;
+    transition: opacity 1s ease;
+}
