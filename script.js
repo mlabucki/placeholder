@@ -10,6 +10,6 @@ document.addEventListener("DOMContentLoaded", () => {
       setTimeout(() => {
         banner.style.display = "none";
       }, 1000);
-    }, 3000);
+    }, 1000);
   }
 });
