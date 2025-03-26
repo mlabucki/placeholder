@@ -2,7 +2,8 @@
     --font-family: 'Calluna Semibold', serif;
     --color-light: #f6f6f4;
     --color-dark: #212121;
-}
+    --font-size:1.5em;
+}   
 
 * {
     margin: 0;
@@ -28,15 +29,16 @@ body {
 }
 
 p.info {
-    font-size: 2em;
+    font-size: var(--font-size);
     font-weight: 600;
     color: var(--color-light);
     font-family: var(--font-family);
-    line-height: 2;
+    line-height: 1.4;
+    margin-top: 2em;
 }
 
 p.contact-link {
-    font-size: 2em;
+    font-size: var(--font-size);
     font-weight: 400;
     color: var(--color-light);
     font-family: var(--font-family);
@@ -45,7 +47,7 @@ p.contact-link {
 img.logo {
     display: block;
     margin: 0 auto;
-    width: 15.741vh;
+    width: 25.741vh;
     height: auto;
     color: var(--color-light);
 }

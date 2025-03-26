@@ -7,9 +7,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
     setTimeout(() => {
       banner.style.opacity = "0";
-      setTimeout(() => {
-        banner.style.display = "none";
-      }, 1000);
-    }, 1000);
+      banner.addEventListener(
+        "transitionend",
+        () => {
+          banner.style.display = "none";
+        },
+        { once: true }
+      );
+    }, 2000);
   }
 });
